@@ -3,15 +3,25 @@
 
 <head>
 	<title>Prabesh Bhandari</title>
+	<link rel="icon" type="jpg" href="Prabesh_Bhandari_2.png">
 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 
+	<!-- boxicons icons link -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- Fonts links -->
 	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
 		rel="stylesheet">
 
+
+
+
+
+	<!-- Css links -->
 	<link rel="stylesheet" type="text/css" href="default.css">
 	<link id="theme-style" rel="stylesheet" type="text/css" href="">
 	<!-- <link rel="stylesheet" href="CSS/blue.css" type="text/css">
@@ -21,17 +31,18 @@
 </head>
 
 <body>
-	
+
+
 	<section class="s1">
 		<div class="main-container">
 			<div class="nameofmine">
 				<div class="wrapper">
 
 					<h1 class="name">
-						<span style="color: rgba(164, 176, 51, 0.975);">
+						<!-- <span style="color: rgba(164, 176, 51, 0.975);">
 							< /Hello World!>
-						</span> <br>
-						Prabesh Bhandari 
+						</span> <br> -->
+						Prabesh Bhandari
 					</h1>
 
 				</div>
@@ -42,7 +53,7 @@
 				<div class="nav-wrapper">
 
 
-					<a href="index.html">
+					<a href="#">
 						<div class="dots-wrapper">
 							<div id="dot-1" class="browser-dot"></div>
 							<div id="dot-2" class="browser-dot"></div>
@@ -52,22 +63,36 @@
 
 
 					<ul id="navigation">
-						<li><a href="index.html#home">Home</a></li>
+						<li><a href="#home">Home</a></li>
 						<!-- <li><a href="index.html#about">Facts</a></li> -->
-						<li><a href="index.html#education">Education</a></li>
+						<li><a href="#education">Education</a></li>
 						<!-- <li><a href="index.html#projects">Projects</a></li> -->
-						<li><a href="index.html#contact">Contact</a></li>
+						<li><a href="#contact">Contact</a></li>
 
 					</ul>
 				</div>
 
 				<div class="left-column">
 					<a name="home"></a>
-					<img id="profile_pic" src="Prabesh_Bhandari.jpg">
+					<img id="profile_pic" src="Prabesh_Bhandari_2.png">
 					<h5 style="text-align: center;line-height: 0;">Prabesh Bhandari</h5>
-					<h6 style="text-align: center;line-height: 0;">(Student)</h6>
+					<h5 style="text-align: center;line-height: 0;"><span class="auto-type"></span></h5>
+					
 
+					<h6 style="text-align: center;line-height: 0;"><span id="element"></span></h6>
 
+					<!-- Load library from the CDN -->
+					<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+					<!-- Setup and start animation! -->
+					<script>
+						var typed = new Typed('#element', {
+							strings: ['Student', 'Web Developer'],
+							typeSpeed: 50,
+							backspeed:150,
+							loop: true,
+						});
+					</script>
 					<div id="theme-options-wrapper">
 						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
 						<div data-mode="green" id="green-mode" class="theme-dot"></div>
@@ -86,9 +111,7 @@
 							<div id="corner-tl" class="corner"></div>
 							<div id="corner-tr" class="corner"></div>
 							<h3>WHO AM I ?</h3>
-							<p>A student currently immersed in their studies and aspiring to work in web development has
-								a strong focus on front-end technologies, with a deeper knowledge of client-side
-								programming rather than server-side development.</p>
+							<p>A student passionate about web development, focusing on front-end technologies with strong client-side skills.</p>
 							<div id="corner-br" class="corner"></div>
 							<div id="corner-bl" class="corner"></div>
 						</div>
@@ -104,48 +127,40 @@
 			<div class="about-wrapper">
 
 				<div class="about-me">
-					<h4>MORE ABOUT ME ?</h4>
+					<!-- <h4>MORE ABOUT ME ?</h4>
 					<p>
-						I am a student who is currently studying in the field of computer science. 
-
+						Enthusiastic BCA student with a strong foundation in web development and front-end technologies. Passionate about problem-solving and creating user-friendly interfaces. Eager to apply technical skills in a dynamic software development role while continuously learning and growing.
 					</p>
-					
-					<p>
-						I am a
-						strong believer in the power of technology to transform lives and make the world a better place.
-					</p>
-					<p>When I'm not coding, I would probably be listening music or watching movies/webseries or playing
-						games.</p>
-					<p></p>
 
-					<hr>
+					<hr> -->
 					<a name="expertise"></a>
 					<h4>TOP EXPERTISE</h4>
 
 					<p>Web developer with primary focus on front-end: <a target="_blank"
-							href="prabesh-bhandari-cv-merojob.pdf"><br> Download CV</a></p>
+							href="Prabesh_Bhandari_CV.pdf"><br> Download CV</a></p>
 
 					<div id="skills">
 						<ul>
-							<li>HTML</li>
+							<li><i class='bx bxl-html5'></i>HTML</li>
 
-							<li>CSS</li>
+							<li><i class='bx bxl-css3'></i>CSS</li>
 
 
 						</ul>
 
 						<ul>
-							<li>Abode Illustrator</li>
-							<li>Microsoft Office</li>
+							<li><i class='bx bxl-react'></i>React (Learning) </li>
+							<li><i class='bx bxl-nodejs'></i>NodeJs (Learning)</li>
 
 						</ul>
 						<ul>
-							<li>Google Sheets</li>
-							<li>Python (Basic)</li>
+							<li><i class='bx bxl-javascript'></i>JavaScript (Learning)</li>
+							<li><i class='bx bxl-python'></i>Python (Basic)</li>
 						</ul>
 						<ul>
-							<li>JavaScript (Learning)</li>
-							<li>NodeJs & React (Learning) </li>
+							<li><i class='bx bxl-adobe'></i>Abode Illustrator</li>
+							<li><i class='bx bxl-microsoft'></i>Microsoft Office</li>
+
 						</ul>
 
 					</div>
@@ -159,39 +174,43 @@
 		</div>
 	</section>
 
-	
-	<section class="education-section">
+
+	<section class="education-section" id="education">
 
 		<a href="" name="projects"></a>
 
-        <h3 class="education-title">Education</h3>
-        <div class="education-wrapper">
-            <div class="education-item">
-                <img src="samriddhi.webp" alt="Samriddhi College">
-                <div class="education-info">
-                    <h4>Samriddhi College</h4>
-                    <p>Bachelor in Computer Application (BCA)</p>
-                    <p>2022 - Present</p>
-                </div>
-            </div>
-            <div class="education-item">
-                <img src="milestone.webp" alt="Milestone Int'l School">
-                <div class="education-info">
-                    <h4>Milestone Int'l School</h4>
-                    <p>High School (+2)</p>
-                    <p>2020 - 2022</p>
-                </div>
-            </div>
-            <div class="education-item">
-                <img src="circle logo boarding.png" alt="Paribartan Eng. School">
-                <div class="education-info">
-                    <h4>Paribartan Eng. School</h4>
-                    <p>Primary School</p>
-                    <p>2010 - 2020</p>
-                </div>
-            </div>
-        </div>
-    </section>
+		<h3 class="education-title">Education</h3>
+		<div class="education-wrapper">
+			<div class="education-item">
+				<img src="samriddhi.webp" alt="Samriddhi College">
+				<div class="education-info">
+					<h4>Samriddhi College</h4>
+					
+					<p>(BCA)</p>
+					<p>Bachelor</p>
+					<p>2023 - Present</p>
+				</div>
+			</div>
+			<div class="education-item">
+				<img src="milestone.webp" alt="Milestone Int'l School">
+				<div class="education-info">
+					<h4>Milestone Int'l School</h4>
+					<p>(Computer Science)</p>
+					<p>High School (+2)</p>
+					<p>2021 - 2023</p>
+				</div>
+			</div>
+			<div class="education-item">
+				<img src="circle logo boarding.png" alt="Paribartan Eng. School">
+				<div class="education-info">
+					<h4>Paribartan Eng. School</h4>
+
+					<p>Primary School</p>
+					<!-- <p>2010 - 2020</p> -->
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<section class="s2">
 		<div class="main-container">

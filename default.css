@@ -17,7 +17,7 @@
 	--accentColor: #007bff;
 	--shadowColor: rgba(0, 0, 0, 0.1);
 	--scrollbarTrack: #192734;
-	--scrollbarThumb: linear-gradient(180deg, #ff4500, #ff6347, #ff4500);
+	--scrollbarThumb: linear-gradient(180deg, #323590, #325aa9, #2f4d77);
 }
 
 html, body{
@@ -29,6 +29,9 @@ html, body{
 body *{
 	transition: 0.3s;
 }
+
+
+/* Scroll bar  */
 
 ::-webkit-scrollbar {
 	width: 10px;
@@ -44,13 +47,13 @@ body *{
 
 @keyframes burningFire {
 	0% {
-		box-shadow: 0 0 5px #ff4500;
+		box-shadow: 0 0 5px #002aff;
 	}
 	50% {
-		box-shadow: 0 0 15px #ff6347;
+		box-shadow: 0 0 15px #0173de;
 	}
 	100% {
-		box-shadow: 0 0 5px #ff4500;
+		box-shadow: 0 0 5px #0400ff;
 	}
 }
 
@@ -86,7 +89,7 @@ h6 { font-size: 16px;}
 .s1{
 	background-color: var(--mainColor);
 	border-bottom:1px solid var(--borderColor);
-	overflow:auto;
+	overflow: hideen;
 }
 
 .s2{
@@ -228,7 +231,7 @@ h1{
 	border:2px solid var(--borderColor);
 }
 #profile_pic:hover{
-	box-shadow: 4px 4px 80px 1px #e1a55caf;
+	box-shadow: 4px 4px 80px 1px #2b334158;
 }
 
 #theme-options-wrapper{
@@ -332,6 +335,11 @@ h1{
 	left: -5px
 }
 
+
+
+/* About section starts */
+
+
 .about-wrapper{
 	display: grid;
 	text-align: center;
@@ -340,7 +348,10 @@ h1{
 	padding-top: 50px;
 	gap:100px;
 }
-
+.about-wrapper p{
+	text-align: center;
+	padding: 10px 100px;
+}
 #skills{
 	display: flex;
 	justify-content: space-evenly;
@@ -358,6 +369,12 @@ h1{
 }
 
 
+
+/* Icons of Skills */
+
+#skills ul li i{
+	color: red;
+}
 
 
 .education-section {
